@@ -1,0 +1,171 @@
+/* ======================
+   Global Styles
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======================
+   Navbar
+====================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #004080;
+  padding: 12px 40px;
+}
+
+.navbar img {
+  height: 45px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffcc00;
+}
+
+/* ======================
+   About Section
+====================== */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 50px;
+  background: #fff;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ======================
+   Team Section
+====================== */
+.team {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f4f4f4;
+}
+
+.team h2 {
+  font-size: 2rem;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  color: #004080;
+}
+
+.team-card p {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* ======================
+   Footer
+====================== */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #004080;
+  color: white;
+  margin-top: 40px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row ;
+    gap: 20px;
+}
+.social a {
+    color: #00aaff;
+    font-size: 1.2rem;
+}
+/* Social Links Hover */
+.social a:hover {
+    color: #ffaa00; /* Default hover color */
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Brand-specific hover colors */
+.social a.facebook:hover { color: #1877f2; }   /* Facebook */
+.social a.twitter:hover { color: #84d0ff; }    /* Twitter */
+.social a.instagram:hover { color: #fd1d1d; }  /* Instagram */
+.social a.linkedin:hover { color: #00709c; }   /* LinkedIn */
+.social a.discord:hover { color: #2436ff; }    /* Discord */
+.social a.github:hover { color: #d1d1d1; }     /* GitHub */
