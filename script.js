@@ -1,17 +1,18 @@
 'use strict';
 
-// sab elements select karo
+// Select elements
 const navToggler = document.querySelector("[data-nav-toggler]");
 const navbar = document.querySelector("[data-navbar]");
 const header = document.querySelector("[data-header]");
 
-// navbar toggle
+
+// Navbar toggle
 navToggler.addEventListener("click", () => {
   navbar.classList.toggle("active");
   navToggler.classList.toggle("active");
 });
 
-// scroll ke time header shrink/active
+// Scroll - header shrink/active
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     header.classList.add("active");
@@ -20,4 +21,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// Alternative concise header scroll
+const $header = document.querySelector("[data-header]");
 
+window.addEventListener("scroll", () => {
+  $header.classList[window.scrollY > 50 ? "add" : "remove"]("active");
+});
+
+// Add to favorite button toggle
+const $toggleBtns = document.querySelectorAll("[data-toggle-btn]");
+
+$toggleBtns.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+  });
+});
