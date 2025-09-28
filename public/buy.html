@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustyHomes - Buy</title>
+  <link rel="stylesheet" href="./buy.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="./assets/images/logo.png" alt="TrustyHomes Logo">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./rent.html">Rent</a></li>
+      <li><a href="./buy.html" class="active">Buy</a></li>
+      <li><a href="./sell.html">Sell</a></li>
+      <li><a href="./about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="header">
+    <div class="hero-content">
+      <h1>Find Your Dream Home</h1>
+      <p>Browse available properties to buy across Pakistan</p>
+      <input type="text" id="searchBox" placeholder="🔍 Search by city...">
+    </div>
+  </header>
+
+  <!-- Filters Section -->
+  <section class="filters">
+    <select id="sortOptions">
+      <option value="">Sort by</option>
+      <option value="lowToHigh">Price: Low → High</option>
+      <option value="highToLow">Price: High → Low</option>
+    </select>
+
+    <select id="filterCity">
+      <option value="">Filter by City</option>
+      <option value="Karachi">Karachi</option>
+      <option value="Lahore">Lahore</option>
+      <option value="Islamabad">Islamabad</option>
+    </select>
+  </section>
+
+  <!-- Properties Container -->
+  <div id="buyList" class="rent-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 TrustyHomes. All Rights Reserved.</p>
+  </footer>
+
+  <script src="./buy.js"></script>
+</body>
+</html>

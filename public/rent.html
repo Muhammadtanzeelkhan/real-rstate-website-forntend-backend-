@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrustyHomes - Rentals</title>
+  <link rel="stylesheet" href="./rent.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+  <img src="./assets/images/logo.png" alt="TrustyHomes Logo">
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="./rent.html" class="active">Rent</a></li>
+    <li><a href="./buy.html">Buy</a></li>
+    <li><a href="./sell.html">Sell</a></li>
+    <li><a href="./about.html">About</a></li>
+  </ul>
+</nav>
+
+
+  <!-- Hero Section -->
+  <header class="header">
+    <div class="hero-content">
+      <h1>Find Your Dream Rental</h1>
+      <p>Browse through the best rental properties across Pakistan</p>
+      <input type="text" id="searchBox" placeholder="🔍 Search by city...">
+    </div>
+  </header>
+
+  <!-- Filters Section -->
+  <section class="filters">
+    <select id="sortOptions">
+      <option value="">Sort by</option>
+      <option value="lowToHigh">Price: Low → High</option>
+      <option value="highToLow">Price: High → Low</option>
+    </select>
+
+    <select id="filterCity">
+      <option value="">Filter by City</option>
+      <option value="Karachi">Karachi</option>
+      <option value="Lahore">Lahore</option>
+      <option value="Islamabad">Islamabad</option>
+    </select>
+  </section>
+
+  <!-- Rental Cards -->
+  <div id="rentList" class="rent-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 TrustyHomes. All Rights Reserved.</p>
+    <div class="social">
+      <a href="https://web.facebook.com" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://x.com/" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/_.tanzeel.l/" class="instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/muhmmad-tanzeel-88b6ab308/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Muhammadtanzeelkhan" class="github"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+
+  <script src="./rent.js"></script>
+</body>
+</html>

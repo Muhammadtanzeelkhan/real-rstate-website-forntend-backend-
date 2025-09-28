@@ -1,0 +1,100 @@
+/* Global */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #004080;
+  padding: 12px 40px;
+}
+.navbar img { height: 50px; }
+.nav-links { list-style: none; display: flex; gap: 20px; }
+.nav-links a { color: #fff; text-decoration: none; font-weight: 600; }
+.nav-links .active, .nav-links a:hover { color: #ffcc00; }
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1599423300746-b62533397364') center/cover no-repeat;
+  color: white;
+}
+.header h1 { font-size: 40px; margin-bottom: 10px; }
+.header p { font-size: 20px; margin-bottom: 20px; }
+.header input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+.filters select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* Buy Cards */
+.rent-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+.rent-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.rent-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+.rent-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.rent-info {
+  padding: 15px;
+}
+.rent-info h3 { font-size: 20px; margin-bottom: 8px; }
+.rent-info p { font-size: 14px; margin: 5px 0; }
+.price {
+  font-weight: 700;
+  color: #004080;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #004080;
+  color: white;
+}
+.footer .social a {
+  color: white;
+  margin: 0 8px;
+  font-size: 18px;
+}
+.footer .social a:hover { color: #ffcc00; }
